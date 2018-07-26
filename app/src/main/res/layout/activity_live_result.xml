@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/coordinator_layout"
+    android:padding="10dp"
+    tools:context="org.atctech.sms_teacher.LiveResultActivity">
+
+    <LinearLayout
+        android:background="@drawable/boarder_background"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:textColor="#f9061b"
+            android:fontFamily="cursive"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Live Result"
+            android:textAllCaps="true"
+            android:textSize="30sp"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/boarder_background"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:fontFamily="sans-serif-condensed"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subject Name :"
+            android:textSize="16sp"
+            android:layout_gravity="left"
+            android:layout_marginBottom="5dp"
+            android:textAllCaps="true"
+            android:textColor="#d7a100"/>
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/boarder_background"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/subjectNameSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:spinnerMode="dropdown"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/drop" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:fontFamily="cursive"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#ab1717"
+            android:text="Note:// File (Should Be .pdf OR .doc/.docx Only)"/>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/boarder_background"
+            android:orientation="horizontal">
+
+            <Button
+                android:fontFamily="sans-serif-smallcaps"
+                android:id="@+id/chooseFileBtn"
+                android:textColor="#FFF"
+                android:layout_marginLeft="10dp"
+                android:background="#3dc7a7"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:text="choose file"/>
+
+            <TextView
+                android:id="@+id/uploadingFileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:layout_marginLeft="5dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:fontFamily="sans-serif-condensed"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Class Name :"
+            android:textSize="16sp"
+            android:layout_gravity="left"
+            android:layout_marginBottom="5dp"
+            android:textAllCaps="true"
+            android:textColor="#d7009a"/>
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/boarder_background"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/classNameSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:spinnerMode="dropdown"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/drop" />
+
+        </RelativeLayout>
+
+        <Button
+            android:fontFamily="cursive"
+            android:id="@+id/resultSubmitBtn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/button_style_blue"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:textSize="17sp"/>
+
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
